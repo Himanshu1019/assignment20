@@ -66,7 +66,21 @@ public class Junit {
 				}
 				
 			}
-		
+			public static void validpassword(String number )
+			{
+				String check="[@$%][a-bA-Z0-9]";
+				Pattern p=Pattern.compile(check);
+				Matcher m=p.matcher(number);
+				if(m.find())
+				{
+					System.out.println("yes valid password");
+				}
+				else 
+				{
+					System.out.println(" no not a valid password ");
+				}
+
+		}
 
 	
 	public static void main(String[] args) {
@@ -84,6 +98,9 @@ public class Junit {
 		System.out.println("please enter the mobile number  ");
 		String number=s.nextLine();
 		validnumber(number);
+		System.out.println("please enter the password  ");
+		String pass=s.nextLine();
+		validpassword(pass);
 		
 	}
 
