@@ -35,6 +35,22 @@ public class Junit {
 		{
 			System.out.println("no not a valid lastname ");
 		}
+	}
+		public static void validemail(String str1)
+		{
+			String regex="[a-zA-Z0-9.][a-zA-Z0-Hi9]@[a-zA-Z]+([.][a-zA-Z0-9]+)+";
+			Pattern p=Pattern.compile(regex);
+			Matcher m=p.matcher(str1);
+			if(m.find())
+			{
+				System.out.println("yes valid emailid ");
+			}
+			else 
+			{
+				System.out.println(" no not a valid mailid ");
+			}
+			
+
 		
 
 	}
@@ -47,6 +63,10 @@ public class Junit {
 		System.out.println("please enter the lastname ");
 		String lastname=s.nextLine();
 		validlast(lastname);
+		System.out.println("please enter the email id ");
+		String mailid=s.nextLine();
+		validemail(mailid);
+		
 	}
 
 }
