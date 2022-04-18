@@ -90,7 +90,9 @@ public class Junit {
 		System.out.println("please enter the password  ");
 		String pass=s.nextLine();
 		validpassword(pass);
-		
+		System.out.println("please enter all the email formats  ");
+		String email=s.nextLine();
+		validemail(pass);
 	}
 
 }
