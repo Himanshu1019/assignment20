@@ -86,18 +86,7 @@ public class Junit {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		System.out.println("please enter the firstname ");
-		String firstname=s.nextLine();
-		validfirst(firstname);
-		System.out.println("please enter the lastname ");
-		String lastname=s.nextLine();
-		validlast(lastname);
-		System.out.println("please enter the email id ");
-		String mailid=s.nextLine();
-		validemail(mailid);
-		System.out.println("please enter the mobile number  ");
-		String number=s.nextLine();
-		validnumber(number);
+		
 		System.out.println("please enter the password  ");
 		String pass=s.nextLine();
 		validpassword(pass);
