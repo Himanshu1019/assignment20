@@ -50,10 +50,25 @@ public class Junit {
 				System.out.println(" no not a valid mailid ");
 			}
 			
-
+		}
+			public static void validnumber(String number )
+			{
+				String check="(0/91)?[7-9][0-9]{9}";
+				Pattern p=Pattern.compile(check);
+				Matcher m=p.matcher(number);
+				if(m.find())
+				{
+					System.out.println("yes valid mobile number ");
+				}
+				else 
+				{
+					System.out.println(" no not a valid mobile number ");
+				}
+				
+			}
 		
 
-	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
@@ -66,6 +81,9 @@ public class Junit {
 		System.out.println("please enter the email id ");
 		String mailid=s.nextLine();
 		validemail(mailid);
+		System.out.println("please enter the mobile number  ");
+		String number=s.nextLine();
+		validnumber(number);
 		
 	}
 
